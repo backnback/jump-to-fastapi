@@ -16,9 +16,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 애플리케이션 코드 복사
 COPY . .
 
-# 데이터베이스 마이그레이션 실행
-RUN alembic upgrade head
-
 # 포트 노출
 EXPOSE 8000
 
